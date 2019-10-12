@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b187cba8-c25b-4f60-869a-8bd131974c46/deploy-status)](https://app.netlify.com/sites/gatsby-backroads-coachcat/deploys)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
