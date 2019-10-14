@@ -1,35 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout.component"
 import links from "../constants/links"
-import SimpleHero from "../components/simple-hero.component"
 import Banner from "../components/banner.component"
-import Button from "../examples/Button"
 import About from "../components/Home/about.component"
 import Services from "../components/Home/services.component"
+import StyledHero from "../components/styled-hero.component"
+import { graphql } from "gatsby"
 
-export default () => {
+export default ({ data }) => {
   return (
-    <>
-      <Layout>
-        <SimpleHero>
-          <Banner
-            title="continue exploring"
-            info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
-          >
-            <Link to="/tours" className="btn-white">
-              explore tours
-            </Link>
-            <Button color="yellow" big>
-              Button
-            </Button>
-          </Banner>
-        </SimpleHero>
-        Hello world!
-        <Link to={links[2].path}>Blog</Link>
-        <About />
-        <Services />
-      </Layout>
-    </>
+    <Layout>
+      <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
+        <Banner
+          title="continue exploring"
+          info=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officiis."
+        >
+          <AniLink swipe to="/tours" className="btn-white">
+            explore tours
+          </AniLink>
+        </Banner>
+      </StyledHero>
+      Hello world!
+      <AniLink paintDrip to={links[2].path}>
+        Blog
+      </AniLink>
+      <About />
+      <Services />
+    </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`

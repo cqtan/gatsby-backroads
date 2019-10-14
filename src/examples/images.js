@@ -4,6 +4,7 @@ import styled from "styled-components"
 import img from "../images/connectBcg.jpeg"
 import Img from "gatsby-image"
 
+// fluid(maxWidth: ...) --> sets the sizes that gatsby-images will make for srcset. The width will always be parent container width
 const getImages = graphql`
   query Images {
     fixed: file(relativePath: { eq: "defaultBcg.jpeg" }) {
@@ -15,7 +16,7 @@ const getImages = graphql`
     }
     fluid: file(relativePath: { eq: "blogBcg.jpeg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
@@ -31,7 +32,7 @@ const Images = () => {
     <Wrapper>
       <article>
         <h3>basic image</h3>
-        <img src={img} className="basic" />
+        <img src={img} className="basic" alt="example of standard" />
       </article>
       <article>
         <h3>fixed image/blur</h3>
