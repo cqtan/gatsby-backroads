@@ -4,11 +4,13 @@ import Layout from "../components/layout.component"
 // import RegularHeader from "../examples/regularHeader"
 import StyledHero from "../components/styled-hero.component"
 import { graphql } from "gatsby"
+import Tours from "../components/Tours/tours.component"
 
-const Tours = ({ data }) => {
+const tours = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}>Tours</StyledHero>
+      <Tours />
     </Layout>
   )
 }
@@ -25,4 +27,4 @@ export const query = graphql`
   }
 `
 
-export default Tours
+export default tours

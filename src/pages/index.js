@@ -8,6 +8,7 @@ import About from "../components/Home/about.component"
 import Services from "../components/Home/services.component"
 import StyledHero from "../components/styled-hero.component"
 import { graphql } from "gatsby"
+import FeaturedTours from "../components/Home/featuredTours.component"
 
 export default ({ data }) => {
   return (
@@ -28,6 +29,7 @@ export default ({ data }) => {
       </AniLink>
       <About />
       <Services />
+      <FeaturedTours />
     </Layout>
   )
 }

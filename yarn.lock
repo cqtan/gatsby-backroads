@@ -5467,6 +5467,15 @@ gatsby-plugin-page-creator@^2.1.25:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-playground@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-playground/-/gatsby-plugin-playground-1.0.6.tgz#15108395cbfd0795cbd6698a21e123ed6e571a93"
+  integrity sha512-YaDPi2xz6xbIiouvIikOTzJ8MxcBtGfcgoDEVYYVZ6qe1mSyNOK4h6RPtdtnkCWbP1mDTtH3BJU3pf5Rp1TcPg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    graphql-playground-middleware-express "^1.7.8"
+    lodash "^4.17.10"
+
 gatsby-plugin-sass@^2.1.18:
   version "2.1.18"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.1.18.tgz#b9acbe994a79aa96b7595943c8292f81b0b4d9f8"
@@ -6139,7 +6148,7 @@ graphql-playground-html@1.6.12:
   resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.12.tgz#8b3b34ab6013e2c877f0ceaae478fafc8ca91b85"
   integrity sha512-yOYFwwSMBL0MwufeL8bkrNDgRE7eF/kTHiwrqn9FiR9KLcNIl1xw9l9a+6yIRZM56JReQOHpbQFXTZn1IuSKRg==
 
-graphql-playground-middleware-express@^1.7.12:
+graphql-playground-middleware-express@^1.7.12, graphql-playground-middleware-express@^1.7.8:
   version "1.7.12"
   resolved "https://registry.yarnpkg.com/graphql-playground-middleware-express/-/graphql-playground-middleware-express-1.7.12.tgz#de4b2402a02159b2125561fe38eb378b56cf6d99"
   integrity sha512-17szgonnVSxWVrgblLRHHLjWnMUONfkULIwSunaMvYx8k5oG3yL86cyGCbHuDFUFkyr2swLhdfYl4mDfDXuvOA==
