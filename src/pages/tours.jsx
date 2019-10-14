@@ -9,7 +9,7 @@ import Tours from "../components/Tours/tours.component"
 const tours = ({ data }) => {
   return (
     <Layout>
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid}>Tours</StyledHero>
+      <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
       <Tours />
     </Layout>
   )

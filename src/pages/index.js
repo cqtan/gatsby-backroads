@@ -23,10 +23,6 @@ export default ({ data }) => {
           </AniLink>
         </Banner>
       </StyledHero>
-      Hello world!
-      <AniLink paintDrip to={links[2].path}>
-        Blog
-      </AniLink>
       <About />
       <Services />
       <FeaturedTours />
