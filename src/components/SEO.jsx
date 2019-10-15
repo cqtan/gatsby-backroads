@@ -25,7 +25,7 @@ const SEO = ({ title, description }) => {
     siteDesc,
     siteUrl,
     image,
-    twitterUserName,
+    twitterUsername,
   } = site.siteMetadata
 
   return (
