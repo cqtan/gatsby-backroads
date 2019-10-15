@@ -11,8 +11,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "BackRoads",
-    description: "Explore backroads, duh!",
+    description:
+      "Explore worldwide tours & discover what makes each of them unique.",
     author: "CouchCat",
+    twitterUsername: "@couchcat",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://gatsby-backroads-couchcat.netlify.com",
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -21,6 +25,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

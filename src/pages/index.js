@@ -9,10 +9,12 @@ import Services from "../components/Home/services.component"
 import StyledHero from "../components/styled-hero.component"
 import { graphql } from "gatsby"
 import FeaturedTours from "../components/Home/featuredTours.component"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO title="Home" />
       <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
         <Banner
           title="continue exploring"
