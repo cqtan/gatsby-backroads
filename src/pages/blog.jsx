@@ -4,10 +4,12 @@ import Layout from "../components/layout.component"
 import StyledHero from "../components/styled-hero.component"
 import { graphql } from "gatsby"
 import BlogList from "../components/Blog/blog-list.component"
+import SEO from "../components/SEO"
 
 const Blog = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Blog" />
       <StyledHero img={data.blogBcg.childImageSharp.fluid}>Blog</StyledHero>
       {/* <Images /> */}
       <BlogList />
