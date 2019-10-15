@@ -1,14 +1,16 @@
 import React from "react"
 import Layout from "../components/layout.component"
-import Images from "../examples/images"
+// import Images from "../examples/images"
 import StyledHero from "../components/styled-hero.component"
 import { graphql } from "gatsby"
+import BlogList from "../components/Blog/blog-list.component"
 
 const Blog = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.blogBcg.childImageSharp.fluid}>Blog</StyledHero>
-      <Images />
+      {/* <Images /> */}
+      <BlogList />
     </Layout>
   )
 }
