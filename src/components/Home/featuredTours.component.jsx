@@ -30,7 +30,6 @@ const getTours = graphql`
 const FeaturedTours = () => {
   const data = useStaticQuery(getTours)
   const tours = data.featuredTours.edges
-  console.log(tours)
 
   return (
     <section className={styles.tours}>

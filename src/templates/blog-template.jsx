@@ -21,7 +21,7 @@ const Blog = ({ data }) => {
             <img
               src={node.data.target.fields.file["en-US"].url}
               width="400"
-              alt="rich textfield image"
+              alt="rich textfield"
             />
           </div>
         )
@@ -34,7 +34,7 @@ const Blog = ({ data }) => {
             <h1>this is the other post : {title["en-Us"]}</h1>
             <img
               src={image["en-US"].fields.file["en-US"].url}
-              alt="image from other post"
+              alt="from other post"
             />
             {documentToReactComponents(text["en-US"])}
           </div>
