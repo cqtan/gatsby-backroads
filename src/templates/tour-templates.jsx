@@ -69,6 +69,7 @@ const TourTemplates = ({ data }) => {
   )
 }
 
+// $slug is passed from gatsby-node, context. Also accessible through props.pageContext
 export const query = graphql`
   query($slug: String!) {
     tour: contentfulTour(slug: { eq: $slug }) {
