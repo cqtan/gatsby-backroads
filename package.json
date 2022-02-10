@@ -33,7 +33,7 @@
     "gatsby-source-formspree": "^0.0.2",
     "gatsby-transformer-sharp": "^2.2.21",
     "gsap": "^2.1.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
